@@ -1,0 +1,12 @@
+
+
+@media (max-width: $screen-width-xs) {
+	.section {
+		padding-top: 2.25rem;
+		padding-bottom: 2.25rem;
+		&__title {
+			font-size: 1.5rem;
+			margin-bottom: 3rem;
+		}
+	}
+}

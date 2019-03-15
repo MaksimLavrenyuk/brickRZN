@@ -1,0 +1,9 @@
+.logo {
+	display: inline-block;
+	transition: 0.3s;
+	&:hover {
+		opacity: 0.9;
+	}
+}
+
+@import "logo-mediaqueries";

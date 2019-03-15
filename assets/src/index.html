@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Новый стандарт заборов</title>
+    <link rel="stylesheet" href="dist/css/main.css">
+    <script src="dist/js/critical.js"></script>
+</head>
+
+<body>
+    //= dist/template/header/header.html
+    <div id="main-banner" class="main-banner">
+        <div class="main-banner__itm" style="background-image: url(dist/img/slider-img-1.jpg);"></div>
+        <div class="main-banner__itm" style="background-image: url(dist/img/slider-img-2.jpg);"></div>
+        <div class="main-banner__itm" style="background-image: url(dist/img/slider-img-3.jpg);"></div>
+        <div class="main-banner__itm" style="background-image: url(dist/img/slider-img-4.jpg);"></div>
+        <div class="main-banner__itm" style="background-image: url(dist/img/slider-img-5.jpg);"></div>
+    </div>
+    //= dist/template/footer/footer.html
+    <script src="dist/js/main.js" async></script>
+    <script type="text/javascript">
+		// главный баннер
+        $('#main-banner').slick({
+            lazyLoad: 'ondemand',
+            dots: false,
+            arrows: true,
+            infinite: true,
+            autoplaySpeed: 10000,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            focusOnSelect: true,
+            centerMode: true,
+            centerPadding: 0,
+            adaptiveHeight: false,
+            autoplay: false,
+            zIndex: 1,
+            swipeToSlide: true
+        });
+    </script>
+</body>
+
+</html>

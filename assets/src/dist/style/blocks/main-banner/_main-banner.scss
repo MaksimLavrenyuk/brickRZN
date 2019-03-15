@@ -1,0 +1,34 @@
+.main-banner {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	&__itm {
+		display: block;
+		width: 780px;
+		height: 520px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		position: relative;
+		&:before {
+			display: block;
+			position: absolute;
+			content: " ";
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-color: rgba(0, 0, 0, 0.4);
+			transition: 0.3s;
+			cursor: grab;
+		}
+		&.slick-current {
+			&:before {
+				background-color: transparent;
+			}
+		}
+		&:focus {
+			outline: none;
+		}
+	}
+}

@@ -1,0 +1,14 @@
+.pattern {
+	
+	&_color {
+		&_blue {
+			background-color: $secondary;
+			background-image: url(../img/pat-blue.jpg);
+		}
+
+		&_red {
+			background-color: $primary;
+			background-image: url(../img/pat-red.jpg);
+		}
+	}
+}

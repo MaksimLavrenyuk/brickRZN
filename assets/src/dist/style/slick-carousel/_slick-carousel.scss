@@ -1,0 +1,43 @@
+.slick-next, .slick-prev {
+	top: 50%;
+	transform: translate(0,0);
+	height: 30px;
+	width: 30px;
+	background-repeat: no-repeat;
+    background-image: url(../img/sprite-brick.png);
+    z-index: 3;
+	&:hover, &:focus {
+        outline: none;
+        background-color: transparent;
+        color: transparent;
+        background: url(../img/sprite-brick.png);
+        &:before {
+            opacity: $slick-opacity-on-hover;
+        }
+    }
+    &.slick-disabled {
+    	opacity: 0.5;
+    }
+}
+ 
+.slick-next {
+	right: 15px;
+	background-position: -38px -64px;
+	&:hover, &:focus {
+        background-position: -38px -64px;
+    }
+}
+
+.slick-prev {
+	left: 15px;
+	background-position: 0px 0px;
+	&:hover, &:focus {
+        background-position: -75px -64px;
+    }
+}
+
+.slick-list {
+    .slick-loading & {
+        background: red slick-image-url("preloader.svg") center center no-repeat;
+    }
+}

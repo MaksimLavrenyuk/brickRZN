@@ -1,0 +1,51 @@
+//ШРИФТЫ
+@import "fonts/fonts";
+
+
+//ИКОНКИ
+@import "icons/icons";
+
+//ОБЩИЕ СТИЛИ ВСЕХ СТРАНИЦ
+
+//типографика
+@import "typography/typography";
+
+//БЛОКИ 
+// логотип +
+@import "blocks/logo/logo";
+// секция +
+@import "blocks/section/section";
+// контент страницы +
+@import "blocks/page/page";
+// кнопка +
+@import "blocks/btn/btn";
+// форма +
+@import "blocks/form/form";
+// body +
+@import "blocks/body/body";
+// боковая панель +
+@import "blocks/aside/aside";
+
+//главный баннер +
+@import "blocks/main-banner/main-banner";
+
+// slick
+@import "slick-carousel/slick-carousel";
+
+// хедер +
+@import "blocks/header/header";
+//футер +
+@import "blocks/footer/footer";
+
+//УТИЛИТЫ
+@import "utilities/utilities";
+
+// паттерны
+@import "pattern/pattern";
+
+// плагины не с npm
+
+//СТРАНИЦЫ
+
+@import "pages/index/index";
+

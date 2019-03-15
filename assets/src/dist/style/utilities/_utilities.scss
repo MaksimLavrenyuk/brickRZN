@@ -1,0 +1,44 @@
+.underline {
+	text-decoration: underline;
+}
+
+.hover-effect {
+	position: relative;
+	&:before {
+		display: inline-block;
+		position: absolute;
+		content: " ";
+		width: 100%;
+		height: 100%;
+		left: 0; right: 0; top: 0; bottom: 0;
+		opacity: 0.4;
+		background: transparent;
+		transition: $animation-time-sm;
+		border: none;
+	}
+
+	&:hover {
+		&:before {
+			background-color: $primary;
+		}
+	}
+}
+
+._border_position_left {
+	border-left: 1px solid transparent;
+}
+
+._border_color_white {
+	border-color: white;
+}
+
+@media (max-width: $screen-width-sm) {
+	.hover-effect {
+
+		&:hover {
+			&:before {
+				background-color: transparent;
+			}
+		}
+	}
+}
