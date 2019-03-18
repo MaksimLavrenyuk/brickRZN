@@ -1,0 +1,10 @@
+.gallery {
+	display: flex;
+	justify-content: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	&__itm {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}

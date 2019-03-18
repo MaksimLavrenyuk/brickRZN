@@ -1,0 +1,20 @@
+.contacts {
+	padding: 0;
+	margin: 0;
+	padding-left: 1.25rem;
+	list-style: none;
+	&__itm {
+		margin-bottom: 0.25rem;
+	}
+	&__text {
+
+	}
+	a.contacts__text {
+		color: $body-color;
+		&:hover,
+		&:focus {
+			text-decoration: none;
+			color: $link-hover-color;
+		}
+	}
+}

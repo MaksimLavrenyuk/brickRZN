@@ -1,10 +1,12 @@
 .slick-next, .slick-prev {
 	top: 50%;
 	transform: translate(0,0);
-	height: 30px;
-	width: 30px;
+	height: 40px;
+	width: 40px;
 	background-repeat: no-repeat;
     background-image: url(../img/sprite-brick.png);
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
     z-index: 3;
 	&:hover, &:focus {
         outline: none;
@@ -21,18 +23,20 @@
 }
  
 .slick-next {
-	right: 15px;
-	background-position: -38px -64px;
+	right: 25px;
+    background-position: 14px -35px;
 	&:hover, &:focus {
-        background-position: -38px -64px;
+        background-color: rgba(0,0,0,0.4);
+        background-position: 14px -35px;
     }
 }
 
 .slick-prev {
-	left: 15px;
-	background-position: 0px 0px;
+	left: 25px;
+    background-position: 13px 11px;
 	&:hover, &:focus {
-        background-position: -75px -64px;
+        background-color: rgba(0,0,0,0.4);
+        background-position: 13px 11px;
     }
 }
 

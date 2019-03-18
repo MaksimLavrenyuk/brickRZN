@@ -25,9 +25,18 @@
 @import "blocks/body/body";
 // боковая панель +
 @import "blocks/aside/aside";
-
+// галлерея
+@import "blocks/gallery/gallery";
+// Преимущества
+@import "blocks/advantages/advantages";
 //главный баннер +
 @import "blocks/main-banner/main-banner";
+//баннер +
+@import "blocks/banner/banner";
+//контакты +
+@import "blocks/contacts/contacts";
+//скролл наверх +
+@import "blocks/scroll-on-top/scroll-on-top";
 
 // slick
 @import "slick-carousel/slick-carousel";

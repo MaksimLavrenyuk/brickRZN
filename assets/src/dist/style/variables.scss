@@ -8,7 +8,7 @@ $font-family-base: 'Roboto', sans-serif;
 $font-family-secondary: "Days", sans-serif;
 $line-height-base: 1.5;
 $link-hover-color: lighten(#bd1c22, 30%);
-
+$btn-border-radius: 0;
 //время анимации
 //в зависимости от размера экрана, подставляется одна из 3 переменных
 $animation-time-lg: 0.7s;
@@ -18,6 +18,7 @@ $animation-time-sm: 0.3s;
 //прозрачность
 //прозрачность при наведении
 $opacity-hover: 0.8;
+
 
 // ПЕРЕОПРЕДЕЛЕНИЕ ДЕФОЛТНЫХ ЗНАЧЕНИЙ ПЕРЕМЕННЫХ SLICK-SLIDER 
 $slick-dot-color: #7e7d82;
