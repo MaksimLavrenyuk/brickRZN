@@ -12,34 +12,74 @@
 
 <body>
     //= dist/template/header/header.html
-    <div id="main-banner" class="main-banner">
-        <div class="main-banner__itm" style="background-image: url(dist/img/slider-img-1.jpg);"></div>
-        <div class="main-banner__itm" style="background-image: url(dist/img/slider-img-2.jpg);"></div>
-        <div class="main-banner__itm" style="background-image: url(dist/img/slider-img-3.jpg);"></div>
-        <div class="main-banner__itm" style="background-image: url(dist/img/slider-img-4.jpg);"></div>
-        <div class="main-banner__itm" style="background-image: url(dist/img/slider-img-5.jpg);"></div>
+    <div class="page">
+        <div id="main-banner" class="main-banner">
+            <div class="main-banner__itm" style="background-image: url(dist/img/slider-img-1.jpg);"></div>
+            <div class="main-banner__itm" style="background-image: url(dist/img/slider-img-2.jpg);"></div>
+            <div class="main-banner__itm" style="background-image: url(dist/img/slider-img-3.jpg);"></div>
+            <div class="main-banner__itm" style="background-image: url(dist/img/slider-img-4.jpg);"></div>
+            <div class="main-banner__itm" style="background-image: url(dist/img/slider-img-5.jpg);"></div>
+        </div>
+        <div class="page__content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h1>Бетонные заборы из элементов «BRICK»</h1>
+                        <div class="video-responsive">
+                            <div class="video-responsive__container">
+                                <iframe width="560" height="315" src="http://www.youtube.com/embed/n5WVdaAqVV4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                            </div>
+                        </div>
+                        <p>
+                            Заборы – особые сооружения постоянно подвергающиеся воздействию атмосферных явлений (дождь, снег, солнце, ветер и т.д.) в отличие от других, имеющих «крышу над головой». Поэтому при производстве бетонных заборов должны применяться технологии, материалы и конструкторские решения, позволяющие заборам выполнять не только свои основные задачи, но и одновременно противостоять губительному воздействию окружающей среды. Это касается, в первую очередь, заборов высоких потребительских свойств и ценовых категорий, срок службы которых должен исчисляться многими десятилетиями.
+                        </p>
+                        <div class="gallery gallery_size_min justify-content-center mt-4 mb-4">
+                            <div class="gallery__itm">
+                                <img class="img-fluid" src="dist/img/gallery-itm-img-1.jpg" alt="">
+                            </div>
+                            <div class="gallery__itm">
+                                <img class="img-fluid" src="dist/img/gallery-itm-img-2.jpg" alt="">
+                            </div>
+                            <div class="gallery__itm">
+                                <img class="img-fluid" src="dist/img/gallery-itm-img-3.jpg" alt="">
+                            </div>
+                        </div>
+                        <p>
+                            <strong>Все это решает система элементов «BRICK»</strong> – конструктор, предназначенный для изготовления заборов и ограждений в Беларуси из колотых блоков /камня/ в первую очередь, а также других сооружений и конструкций – во вторую. И как любая система, предназначенная для решения специальных задач, она имеет ряд преимуществ перед традиционными, использующими строительные материалы широкого применения, системами для решения тех же задач – строительства заборов в РБ.
+                        </p>
+                        <p>
+                            Например – из кирпича можно строить дом, гараж, сарай, навес, беседку, баню, печь, камин и … забор, а из элементов «BRICK» нужно! строить в первую очередь заборы, а уж потом – другие сооружения и конструкции. Поэтому, если Вы собираетесь купить забор в Минске, обратите внимание на все преимущества нашей системы.
+                        </p>
+                        <h2>
+                            6 причин купить забор из блоков «BRICK»
+                        </h2>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+        </div>
     </div>
     //= dist/template/footer/footer.html
     <script src="dist/js/main.js" async></script>
     <script type="text/javascript">
-		// главный баннер
-        $('#main-banner').slick({
-            lazyLoad: 'ondemand',
-            dots: false,
-            arrows: true,
-            infinite: true,
-            autoplaySpeed: 10000,
-            speed: 300,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            focusOnSelect: true,
-            centerMode: true,
-            centerPadding: 0,
-            adaptiveHeight: false,
-            autoplay: false,
-            zIndex: 1,
-            swipeToSlide: true
-        });
+    // главный баннер
+    $('#main-banner').slick({
+        lazyLoad: 'ondemand',
+        dots: false,
+        arrows: true,
+        infinite: true,
+        autoplaySpeed: 10000,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        centerMode: true,
+        centerPadding: 0,
+        adaptiveHeight: false,
+        autoplay: false,
+        zIndex: 1,
+        swipeToSlide: true
+    });
     </script>
 </body>
 
