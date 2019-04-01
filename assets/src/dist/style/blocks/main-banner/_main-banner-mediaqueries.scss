@@ -1,0 +1,32 @@
+@media (max-width: $screen-width-lg) {
+	.main-banner {
+		margin-top: 176px;
+		&__itm {
+			height: 300px;
+		}
+	}
+}
+
+@media (max-width: $screen-width-md) {
+	.main-banner {
+		margin-top: 200px;
+	}
+}
+@media (max-width: $screen-width-sm) {
+	.main-banner {
+		margin-top: 214px;
+	}
+}
+
+@media (max-width: $screen-width-xs) {
+	.main-banner {
+		margin-top: 283px;
+	}
+}
+
+
+@media (max-width: 375px) {
+	.main-banner {
+		margin-top: 331px;
+	}
+}

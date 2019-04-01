@@ -1,0 +1,20 @@
+.advantages {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	&__itm {
+		flex: 50% 0 0;
+		padding-left: 90px;
+		padding-right: 15px;
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-size: 79px;
+		margin-bottom: 1.875rem;
+	}
+	&__title {
+		font-size: 1.125rem;
+	}
+}
+
+@import "advantages-mediaqueries";

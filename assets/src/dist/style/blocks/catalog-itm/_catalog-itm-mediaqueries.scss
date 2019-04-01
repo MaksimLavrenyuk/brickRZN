@@ -1,0 +1,13 @@
+
+@media (max-width: $screen-width-xs) {
+	.catalog-itm {
+		&__content {
+			flex-direction: column;
+		}
+	}
+	.catalog-itm-images {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 1.875rem;
+	}
+}

@@ -1,0 +1,10 @@
+@media (max-width: $screen-width-xs) {
+	.gallery {
+		flex-wrap: wrap;
+		margin-left: -15px;
+		margin-right: -15px;
+		&__itm {
+			width: 50%;
+		}
+	}
+}

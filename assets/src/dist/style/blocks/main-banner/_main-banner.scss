@@ -2,6 +2,7 @@
 	padding: 0;
 	margin: 0;
 	list-style: none;
+	margin-top: 161px;
 	&__itm {
 		display: block;
 		width: 780px;
@@ -32,3 +33,5 @@
 		}
 	}
 }
+
+@import "main-banner-mediaqueries";

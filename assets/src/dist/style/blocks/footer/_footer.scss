@@ -1,6 +1,35 @@
 .footer {
-
+	padding-top: 1.25rem;
+	padding-bottom: 1.25rem;
 }
 
+.footer-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&__icon {
+		border: 1px solid white;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 60px;
+		height: 60px;
+		margin-bottom: 10px;
+	}
+	&__text {
+		color: white;
+		text-align: center;
+	}
+	.btn {
+		width: 100%;
+	}
+}
 
+a.footer-info__text {
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+}
 @import "footer-mediaqueries";

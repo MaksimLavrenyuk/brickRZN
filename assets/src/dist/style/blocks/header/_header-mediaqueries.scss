@@ -1,3 +1,56 @@
 @media (max-width: $screen-width-lg) {
+	.header-nav {
+		display: none;
+	}
+	.header {
+		&_fixed {
+			transform: translateY(-136px);
+		}
+	}
+	.navbar-toggler {
+		display: block;
+	}
+}	
 
+@media (max-width: $screen-width-md) {
+	.header {
+		&_fixed {
+			transform: translateY(-160px);
+		}
+		&__title {
+			font-size: 1.25rem;
+		}
+		&__caption {
+			font-size: 0.875rem;
+		}
+		&__top {
+			._border_position_left {
+				border: none;
+			}
+		}
+	}
+}
+@media (max-width: $screen-width-sm) {
+	.header {
+		&_fixed {
+			transform: translateY(-175px);
+		}
+	}
+}
+
+@media (max-width: $screen-width-xs) {
+	.header {
+		&_fixed {
+			transform: translateY(-243px);
+		}
+	}
+}
+
+
+@media (max-width: 375px) {
+	.header {
+		&_fixed {
+			transform: translateY(-292px);
+		}
+	}
 }

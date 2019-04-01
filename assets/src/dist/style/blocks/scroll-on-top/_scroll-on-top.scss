@@ -1,0 +1,35 @@
+.scroll-on-top {
+	position: absolute;
+	top: 0px;
+	left: 20px;
+	height: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	&__container {
+		position: relative;
+		height: 100%;
+	}
+
+
+}
+.scroll-on-top__btn { 
+	width: 45px;
+	height: 45px;
+	background-image: url(../img/arrow-top.png);
+	background-color: #063f7f;
+	background-repeat: no-repeat;
+	background-size: 40px;
+	background-position: center center;
+	border: none;
+	transition: 0.3s;
+	&:hover,
+	&:focus {
+		opacity: 0.8;
+	}
+}
+
+@media (max-width: $screen-width-lg) {
+	.scroll-on-top {
+		display: none;
+	}
+}

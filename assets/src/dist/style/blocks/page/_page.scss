@@ -1,6 +1,28 @@
 .page {
+	position: relative;
+	&_main {
+		margin-top: 161px;
+	}
 	&__content {
-		padding-top: 4rem;
-		padding-bottom: 2rem;
+		padding-top: 3.5rem;
+		padding-bottom: 3.5rem;
 	}
 }
+.page-secondary {
+	margin-top: 161px;
+}
+
+.page-gallery-itm {
+	margin-bottom: 1.875rem;
+	&__title {
+		font-size: 1rem;
+		font-weight: normal;
+	}
+	&__img {
+		img {
+			width: 100%;
+		}
+	}
+}
+
+@import "page-mediaqueries";

@@ -27,8 +27,22 @@
 @import "blocks/aside/aside";
 // галерея +
 @import "blocks/gallery/gallery";
+// галлерея
+@import "blocks/gallery/gallery";
+// Преимущества
+@import "blocks/advantages/advantages";
 //главный баннер +
 @import "blocks/main-banner/main-banner";
+//баннер +
+@import "blocks/banner/banner";
+//контакты +
+@import "blocks/contacts/contacts";
+//скролл наверх +
+@import "blocks/scroll-on-top/scroll-on-top";
+//мобильное меню+
+@import "blocks/mobile-menu/mobile-menu";
+// Элемент каталога+
+@import "blocks/catalog-itm/catalog-itm";
 
 // slick
 @import "slick-carousel/slick-carousel";

@@ -1,8 +1,17 @@
 .aside {
 	&__element {
-		margin-bottom: 1.625rem;
+		margin-bottom: 2.5rem;
 	}
 	&__title {
-
+		font-size: 0.875rem;
+	    text-transform: uppercase;
+	    text-align: center;
+	    background: $secondary;
+	    border-radius: 10px;
+	    color: #fff;
+	    padding: 0.375rem;
+	    font-weight: normal;
 	}
 }
+
+@import "aside-mediaqueries";

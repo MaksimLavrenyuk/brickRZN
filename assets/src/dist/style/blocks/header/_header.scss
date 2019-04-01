@@ -1,4 +1,14 @@
 .header {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	&_fixed {
+		position: fixed;
+		width: 100%;
+		top: 0;
+		z-index: 10;
+		transform: translateY(-117px);
+	}
 	&__top {
 		padding: 1.25rem 0;
 	}
@@ -156,6 +166,13 @@
 			width: 100%;
 		}
 	}
+}
+
+.navbar-toggler {
+	display: none;
+	background-repeat: no-repeat;
+	background-image: url(../img/sprite-brick.png);
+	background-position: 13px -258px;
 }
 
 

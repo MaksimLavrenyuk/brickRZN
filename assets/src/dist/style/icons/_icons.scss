@@ -1,4 +1,27 @@
 .icon {
 	display: block;
 	background-repeat: no-repeat;
+	&_type {
+		&_phone {
+			width: 30px;
+			height: 30px;
+			background-image: url(../img/sprite-brick.png);
+			background-repeat: no-repeat;
+			background-position: 0 -93px;
+		}
+		&_marker {
+			width: 30px;
+			height: 30px;
+			background-image: url(../img/sprite-brick.png);
+			background-repeat: no-repeat;
+			background-position: 6px -156px;
+		}
+		&_calculator {
+			width: 30px;
+			height: 30px;
+			background-image: url(../img/sprite-brick.png);
+			background-repeat: no-repeat;
+			background-position: 5px -210px;
+		}
+	}
 }

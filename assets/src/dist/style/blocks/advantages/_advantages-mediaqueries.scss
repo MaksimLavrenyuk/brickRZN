@@ -1,0 +1,21 @@
+@media (max-width: $screen-width-md) {
+	.advantages {
+		&__itm {
+			padding-left: 65px;
+			background-size: 50px;
+		}
+		&__title {
+			margin-top: 0.875rem;
+			margin-bottom: 0.875rem;
+		}
+	}
+}
+
+@media (max-width: $screen-width-xs) {
+	.advantages {
+		&__itm {
+			width: 100%;
+			flex: 100% 0 0;
+		}
+	}
+}

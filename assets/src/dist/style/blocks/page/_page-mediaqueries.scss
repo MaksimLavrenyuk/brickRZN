@@ -1,0 +1,29 @@
+@media (max-width: $screen-width-lg) {
+	.page-secondary {
+		margin-top: 176px;
+	}
+}
+
+@media (max-width: $screen-width-md) {
+	.page-secondary {
+		margin-top: 200px;
+	}
+}
+@media (max-width: $screen-width-sm) {
+	.page-secondary {
+		margin-top: 214px;
+	}
+}
+
+@media (max-width: $screen-width-xs) {
+	.page-secondary {
+		margin-top: 283px;
+	}
+}
+
+
+@media (max-width: 375px) {
+	.page-secondary {
+		margin-top: 331px;
+	}
+}
