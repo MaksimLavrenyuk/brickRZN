@@ -10,7 +10,9 @@ $(document).ready(function() {
         $(this).parents('.fields').find('label').css({ 'color': 'initial' });
         $('.fence_img > .fence_num').removeClass('marked');
     });
-    $('.js-btn_popup').click(function(e) {
+
+    $('[name="calcResult"]').submit(function(e) {
+        e.preventDefault();
         $('#calcModal').modal();
     });
 
@@ -36,8 +38,8 @@ $(document).ready(function() {
                 "calcResult": calcResult, // результаты расчета
                 "FeedbackData": FeedbackData,
             },
-            dataType: 'json',
-            success: $.proxy(function(data) {
+            dataType: 'text',
+            success: $.proxy(function(text) {
                 //поведение кнопок
                 submit.html("");
                 submit.css('min-width', 'none');

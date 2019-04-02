@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Монтаж забора за семь дней. Фотоотчет.</title>
+    <title>Расчет стоимости</title>
     <link rel="stylesheet" href="dist/css/main.css">
     <script src="dist/js/critical.js"></script>
 </head>
@@ -20,7 +20,7 @@
                         <h1>Расчет стоимости забора</h1>
                         <form action="dist/server/calc.php" method="post" name="calcResult" class="form_zayvka" enctype="multipart/form-data">
                             <div class="row">
-                                <div class="col-sm-6 overflow">
+                                <div class="col-lg-6 mb-4 mb-lg-0 overflow">
                                     <div class="fence_img">
                                         <div class="fence_num fence_1" data-click="fieldname1">5</div>
                                         <div class="fence_num fence_2" data-click="fieldname2">2</div>
@@ -30,7 +30,7 @@
                                         <img class="aligncenter img-fluid" src="dist/img/calc.png" alt="vkladish_raschet" width="405" height="466">
                                     </div>
                                 </div>
-                                <div class="col-sm-6">
+                                <div class="col-lg-6">
                                     <div class="fence_options">
                                         <h2 class="title_fieldname">Параметры забора</h2>
                                         <div id="field_1-6" class="fields ">
@@ -84,7 +84,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-12">
+                                <div class="col-md-12 mb-4 mb-lg-0">
                                     <div style="margin-bottom:20px" class="fence_options">
                                         <div id="field_1-23" class="fields ">
                                             <p></p>
@@ -99,7 +99,7 @@
                                         </div>
                                     </div>
                                     <div id="field_1-25" class="fields overflow">
-                                        <button id="fieldname29_1" class="js-btn_popup btn_calc field btn btn-primary mt-4" type="submit" data-id="get_calculation">Получить расчет</button>
+                                        <button id="fieldname29_1" class="btn btn-primary mt-4" type="submit">Получить расчет</button>
                                     </div>
                                 </div>
                             </div>
@@ -179,7 +179,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form name="calcFeedbackForm" method="post" action="dist/server/feedback.php" class="calcFeedbackForm form form_needs-validation">
+                    <form name="calcFeedbackForm" method="post" action="dist/server/calc.php" class="calcFeedbackForm form form_needs-validation">
                         <input name="consultationFeedback" type="hidden">
                         <div class="form-group">
                             <label for="calcFeedback-name">Имя</label>

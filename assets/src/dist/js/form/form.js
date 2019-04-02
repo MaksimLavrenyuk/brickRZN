@@ -56,6 +56,25 @@ $(document).ready(function() {
         var val = target.val();
         // После того, как поле потеряло фокус, перебираем значения имени
         switch (name) {
+            case 'city':
+                var regexp_name = /^[a-zа-яё]+$/i; // используем регулярное выражение
+
+
+                if (val.length > 2 && val != '' && regexp_name.test(val)) {
+                    target.addClass('is-valid').removeClass('is-invalid');
+                    target.next('.valid-message')
+                        .removeClass('invalid-feedback')
+                        .addClass('valid-feedback')
+                        .text('Принято');
+                } else {
+                    target.removeClass('is-valid').addClass('is-invalid');
+                    target.next('.valid-message')
+                        .removeClass('valid-feedback')
+                        .addClass('invalid-feedback')
+                        .html('&bull; Длина названия должна составлять не менее двух символов<br> &bull; Поле должно содержать только русские или латинские буквы');
+                }
+                break;
+
             // Проверка поля "Имя"
             case 'name':
                 var regexp_name = /^[a-zа-яё]+$/i; // используем регулярное выражение
