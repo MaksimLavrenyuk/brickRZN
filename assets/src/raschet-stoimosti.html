@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Монтаж забора за семь дней. Фотоотчет.</title>
+    <link rel="stylesheet" href="dist/css/main.css">
+    <script src="dist/js/critical.js"></script>
+</head>
+
+<body>
+    //= dist/template/header/header.html
+    <div class="page page-secondary">
+        <div class="container page__content">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="content">
+                        <h1>Расчет стоимости забора</h1>
+                        <form action="dist/server/calc.php" method="post" name="calcResult" class="form_zayvka" enctype="multipart/form-data">
+                            <div class="row">
+                                <div class="col-sm-6 overflow">
+                                    <div class="fence_img">
+                                        <div class="fence_num fence_1" data-click="fieldname1">5</div>
+                                        <div class="fence_num fence_2" data-click="fieldname2">2</div>
+                                        <div class="fence_num fence_3" data-click="fieldname3">3</div>
+                                        <div class="fence_num fence_4" data-click="fieldname4">1</div>
+                                        <div class="fence_num fence_5" data-click="fieldname5">4</div>
+                                        <img class="aligncenter img-fluid" src="dist/img/calc.png" alt="vkladish_raschet" width="405" height="466">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="fence_options">
+                                        <h2 class="title_fieldname">Параметры забора</h2>
+                                        <div id="field_1-6" class="fields ">
+                                            <label for="fieldname1131">Общая длина забора (м)</label>
+                                            <div class="form-group dfield">
+                                                <input id="fieldname1123" class="field medium form-control" type="text" name="TotalFenceLength" required>
+                                            </div>
+                                        </div>
+                                        <div id="field_1-4" class="fields ">
+                                            <label for="fieldname4">1 Высота столбов (м)</label>
+                                            <div class="form-group dfield">
+                                                <input id="fieldname4" class="field medium form-control" type="text" name="PostHeight" required>
+                                            </div>
+                                        </div>
+                                        <div id="field_1-2" class="fields ">
+                                            <label for="fieldname2">2 Высота заполнения пролета блоками Brick (м)</label>
+                                            <div class="form-group dfield">
+                                                <input id="fieldname2" class="field medium form-control" type="text" name="FillingHeightBlocks" required>
+                                            </div>
+                                        </div>
+                                        <div id="field_1-3" class="fields ">
+                                            <label for="fieldname3">3 Ширина пролета (м)</label>
+                                            <div class="form-group dfield">
+                                                <select id="fieldname3" class="field medium form-control" name="SpanWidth" required>
+                                                    <option value="2,85">2,85</option>
+                                                    <option value="4,05">4,05</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div id="field_1-5" class="fields ">
+                                            <label for="fieldname5">4 Общая ширина ворот (м)</label>
+                                            <div class="form-group dfield">
+                                                <input id="fieldname5" class="field medium form-control" type="text" name="OverallDoorWidth" required>
+                                            </div>
+                                        </div>
+                                        <div id="field_1-1" class="fields ">
+                                            <label for="fieldname1">5 Общая ширина калиток (м)</label>
+                                            <div class="form-group dfield">
+                                                <input id="fieldname1" class="field medium form-control" type="text" name="TotalWidthOfWickets" required>
+                                            </div>
+                                        </div>
+                                        <div id="field_1-7" class="fields ">
+                                            <label for="fieldname7_1">6 Наличие фундамента</label>
+                                            <div class="form-group dfield">
+                                                <select id="ch1" class="rsform-select-box form-control" name="PresenceBase">
+                                                    <option value="Необходим">Необходим</option>
+                                                    <option value="Имеется">Имеется</option>
+                                                    <option value="Имеется частично">Имеется частично</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div style="margin-bottom:20px" class="fence_options">
+                                        <div id="field_1-23" class="fields ">
+                                            <p></p>
+                                            <p></p>
+                                            <div id="fieldname22_1" class="dfield">Здесь Вы сможете добавить схему участка и любую другую полезную информацию. <br>Файлы принимаются в формате jpg, gif, pdf <br>Размер файла не должен превышать 2мб</div>
+                                        </div>
+                                        <p></p>
+                                    </div>
+                                    <div class="uploads">
+                                        <div id="field_1-8" class="fields ">
+                                            <div class="dfield"><input id="fieldname8_1" class="field medium valid form-control-file" type="file" name="fieldname8_1" accept="jpg,jpeg,png,gif,pdf"></div>
+                                        </div>
+                                    </div>
+                                    <div id="field_1-25" class="fields overflow">
+                                        <button id="fieldname29_1" class="js-btn_popup btn_calc field btn btn-primary mt-4" type="submit" data-id="get_calculation">Получить расчет</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <aside class="aside">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-6">
+                                <a href="#" class="aside__element banner">
+                                    <img class="img-fluid" src="dist/img/banner-1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-md-12 col-sm-6">
+                                <a href="#" class="aside__element banner">
+                                    <img class="img-fluid" src="dist/img/banner-2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-md-12 col-sm-6">
+                                <a href="#" class="aside__element banner">
+                                    <img class="img-fluid" src="dist/img/banner-3.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-md-12 col-sm-6">
+                                <div class="aside__element">
+                                    <h3 class="aside__title">Галерея</h3>
+                                    <a href="#" class="banner">
+                                        <img class="img-fluid" src="dist/img/4_slayder_brick-500x500.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-6">
+                                <div class="aside__element">
+                                    <h3 class="aside__title">Наш видео канал</h3>
+                                    <a href="https://www.youtube.com/channel/UCwD2kA1Psl9NnOESmVHhR0Q" class="banner">
+                                        <img class="img-fluid" src="dist/img/11a5c079d3cd766660e195ff15d5642d.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-6">
+                                <div class="aside__element">
+                                    <h3 class="aside__title">Центральный отдел продаж</h3>
+                                    <ul class="contacts">
+                                        <li class="contacts__itm">
+                                            <span class="contacts__text">Россия, г. Рязань Ул. Вокзальная д.77 офис 74</span>
+                                        </li>
+                                        <li class="contacts__itm">
+                                            <a href="tel:+79105708575" class="contacts__text">+7 (910) 570 85 75</a>
+                                        </li>
+                                        <li class="contacts__itm">
+                                            <a href="mailto:jose62@bk.ru" class="contacts__text">jose62@bk.ru</a>
+                                        </li>
+                                        <li class="contacts__itm">
+                                            <span class="contacts__text">
+                                                Время работы отдела: <br>
+                                                пн-пт: с 9:00 до 17:00
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        //= dist/template/scroll-on-top/scroll-on-top.html
+    </div>
+    <div class="modal fade" id="calcModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Контакты для получения расчета</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form name="calcFeedbackForm" method="post" action="dist/server/feedback.php" class="calcFeedbackForm form form_needs-validation">
+                        <input name="consultationFeedback" type="hidden">
+                        <div class="form-group">
+                            <label for="calcFeedback-name">Имя</label>
+                            <input name="name" type="text" class="form-control" id="calcFeedback-name" placeholder="Ваше имя *" required>
+                            <div class="valid-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="calcFeedback-tel">Телефон</label>
+                            <input name="tel" type="tel" class="form-control" id="calcFeedback-tel" placeholder="Телефон для связи *" required>
+                            <div class="valid-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="calcFeedback-Email">E-mail</label>
+                            <input name="email" type="email" class="form-control" id="calcFeedback-Email" placeholder="Ваш e-mail *" required>
+                            <div class="valid-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="calcFeedback-City">Город</label>
+                            <input name="city" type="text" class="form-control" id="calcFeedback-City" placeholder="Ваш город *" required>
+                            <div class="valid-message"></div>
+                        </div>
+                        <small class="form-text text-muted mb-2">Поля обозначенные * обязательны;</small>
+                        <small class="form-text text-muted">Отправляя данную форму, я даю <a href="#">согласие на обработку персональных данных</a></small>
+                        <button type="submit" class="btn btn-primary mt-4" disabled>Получить расчет</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    //= dist/template/footer/footer.html
+    <script src="dist/js/main.js" async></script>
+</body>
+
+</html>

@@ -43,6 +43,8 @@
 @import "blocks/mobile-menu/mobile-menu";
 // Элемент каталога+
 @import "blocks/catalog-itm/catalog-itm";
+// расчет стоимости+
+@import "blocks/fence/fence";
 
 // slick
 @import "slick-carousel/slick-carousel";
@@ -64,3 +66,8 @@
 
 @import "pages/index/index";
 
+
+.modal-title {
+	font-size: 1.25rem;
+	margin: 0;
+}

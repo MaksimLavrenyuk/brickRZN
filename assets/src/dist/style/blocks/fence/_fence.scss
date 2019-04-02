@@ -1,0 +1,44 @@
+.fence_img{
+    display: inline-block;
+    position: relative;
+
+}
+.fence_img > p{
+    text-indent: 0;
+}
+.fence_num{
+    position: absolute;
+    display: inline-block;
+    background-color: #fff;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: default;
+}
+.fence_num.marked{
+    color: #fff;
+    background-color: #971018;
+}
+.fence_1{
+    top: 156px;
+  left: 60px;
+}
+.fence_2{
+    top: 112px;
+  left: 178px;
+}
+.fence_3{
+    top: 156px;
+  left: 232px;
+}
+.fence_4{
+    top: 260px;
+  left: 60px;
+}
+.fence_5{
+    top: 359px;
+    left: 183px;
+}

@@ -36,13 +36,13 @@ $(document).ready(function() {
             };
 
         });
-
+        /*
         $('.form').submit(function(e) {
 
             submitForm(e, this);
 
         });
-
+        */
 
     })();
 
